@@ -1,0 +1,38 @@
+package com.ritu.cms.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ritu.cms.base.vo.Res;
+import com.ritu.cms.common.utils.CommonUtils;
+import com.ritu.cms.service.GridOfficeService;
+
+
+@RestController
+public class GridOfficeController {
+	@Autowired
+	private GridOfficeService gridOfficeService;
+	
+	/**
+	 * 
+	 * 方法名：<br>
+	 * 描述：获取网格列表<br>
+	 * 创建时间：2017年12月18日 下午2:30:21<br>
+	 * @author 阮建钧<br>
+	 * @param district
+	 * @param gridCode
+	 * @param gridName
+	 * @param pageNum
+	 * @param pageSize
+	 * @param callback
+	 * @return<br>
+	 */
+	@ResponseBody
+	@RequestMapping("/select_grid/v1")
+	public String selectGrid(String district, String gridCode, String gridName, Integer pageNum, Integer pageSize,String street){
+		return CommonUtils.filterNullToResponse(
+				gridOfficeService.selectGrid(district, gridCode, gridName, pageNum, pageSize, street), Res.JSON.getType());
+	}
+}

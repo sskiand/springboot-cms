@@ -1,0 +1,9 @@
+package com.ritu.cms.service;
+
+import com.ritu.cms.response.Result;
+
+public interface GridOfficeService {
+	
+	Result selectGrid(String district, String code, String name, Integer pageNum, Integer pageSize, String street);
+
+}
