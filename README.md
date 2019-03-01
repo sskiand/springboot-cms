@@ -12,7 +12,8 @@
 	4、减少冗余性代码，更有利于代码管理。
 	
 注解介绍：
-	1、@TableName：用于表和POJO类之间建立映射关系。
+	
+        1、@TableName：用于表和POJO类之间建立映射关系。
 	2、@Column：用于表字段和POJO类字段之间建立映射关系，支持下划线命名法和驼峰法的自动转换。
 	  	isGeom：是用于判断当前字段是否是postgis中的geometry空间坐标字段；
 	  	coordType：坐标的类型，它是基于isGeom = true时使用，主要有5种形式：
@@ -37,6 +38,7 @@
 		merge：是否属于合并坐标。
 		
 where对象介绍：
+	
 	基本查询：	
 		1、eq(Symbol condition, String columnName, Object value, Class<?> clazz)：等于
 		2、ne(Symbol condition, String columnName, Object value, Class<?> clazz)：不等于
