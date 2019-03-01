@@ -13,7 +13,7 @@
 	
 注解介绍：
 	
-        1、@TableName：用于表和POJO类之间建立映射关系。
+	1、@TableName：用于表和POJO类之间建立映射关系。
 	2、@Column：用于表字段和POJO类字段之间建立映射关系，支持下划线命名法和驼峰法的自动转换。
 	  	isGeom：是用于判断当前字段是否是postgis中的geometry空间坐标字段；
 	  	coordType：坐标的类型，它是基于isGeom = true时使用，主要有5种形式：
@@ -59,6 +59,7 @@ where对象介绍：
 	
 
 使用方法：
+	
 	1、首先当中POJO类使用了@Data标注，需要安装lombok插件（备注：简化代码，因为它的提供了get,set,equals,hashCode,toString方法）。
 	2、接口继承BaseDao实现类，即可使用当中的方法，方法介绍如下：
 		count(where)：查询总数；
