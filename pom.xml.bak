@@ -21,7 +21,7 @@
 		<fastjson.version>1.2.3</fastjson.version>
 	</properties>
 
-	<!-- 这个是feature/test分支啊 -->
+	<!-- 测试分支合并 -->
 	<!-- 指定Maven仓库, OSChina国内更快，优先从osc下载。 -->
 	<repositories>
 		<!-- 官方maven仓库 -->
