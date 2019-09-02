@@ -3,7 +3,7 @@ Implementation-Title: springboot-cms
 Implementation-Version: 1.5.3.RELEASE
 Built-By: Administrator
 Implementation-Vendor-Id: com.ritu
-Build-Jdk: 1.8.0_181
+Build-Jdk: 1.8.0_131
 Implementation-URL: http://projects.spring.io/spring-boot/springboot-c
  ms/
 Created-By: Maven Integration for Eclipse
